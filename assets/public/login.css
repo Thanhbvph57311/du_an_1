@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Layout chính */
+.login-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Bên trái hình ảnh */
+.login-image img {
+    width: 500px;
+    height: auto;
+}
+
+/* Form đăng nhập */
+.login-form {
+    width: 350px;
+}
+
+.form-box {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    text-align: center;
+}
+
+.logo-text {
+    font-family: 'Billabong', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #262626;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background: #fafafa;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0095f6;
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #007bdf;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.divider span {
+    margin: 0 10px;
+    color: #999;
+    font-size: 13px;
+}
+
+.facebook-btn {
+    background-color: #385185;
+    margin-top: 10px;
+}
+
+.forgot {
+    font-size: 12px;
+    color: #00376b;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.register-box {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register-box a {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: 500;
+}

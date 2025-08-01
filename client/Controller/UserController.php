@@ -7,6 +7,7 @@ class UserController
     }
     public function register()
     {
+        require_once "./client/views/pages/login.php";
     }
     public function update()
     {

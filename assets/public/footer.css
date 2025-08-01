@@ -1,0 +1,36 @@
+footer {
+    background: #f4f4f4;
+    padding: 40px 50px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+}
+
+.newsletter {
+    margin-bottom: 20px;
+}
+
+.newsletter input {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    background: #e52424;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background: #c91c1c;
+}
+
+footer p {
+    font-size: 14px;
+    color: #666;
+}

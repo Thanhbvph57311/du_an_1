@@ -11,12 +11,12 @@
 <body>
     <div class="login-container">
         <div class="login-image">
-            <img src="./client/assets/images/login.png" alt="Ig Preview">
+            <img src="./assets/images/login.png" alt="Ig Preview">
         </div>
 
         <div class="login-form">
             <div class="form-box">
-                <h1 class="logo-text">MyWebsite</h1>
+                <h1 class="logo-text">SHOES</h1>
 
                 <form action="index.php?router=login_submit" method="POST" id="loginForm">
                     <input type="text" name="username" id="username" placeholder="Tên đăng nhập">

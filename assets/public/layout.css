@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    line-height: 1.5;
+}
+
+h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 6px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-bar .top-info span,
+.top-bar a {
+    margin-left: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.top-bar a:hover {
+    color: #ff4c4c;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #e52424;
+    padding: 10px 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Slideshow */
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.slideshow img {
+    width: 100%;
+    display: block;
+    object-fit:cover;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Brands */
+.brands {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.brand-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+
+.brand-list img {
+    width: 280px;
+     height: 148px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+
+.brand-list img:hover {
+    transform: scale(1.1);
+}
+
+/* News */
+.news {
+    padding: 40px 60px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.news-card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.news-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.news-card p {
+    font-size: 14px;
+    color: #666;
+}
