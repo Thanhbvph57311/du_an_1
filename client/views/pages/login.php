@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng nhập</title>
     <link rel="stylesheet" href="./assets/public/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -20,7 +21,13 @@
 
                 <form action="index.php?router=login_submit" method="POST" id="loginForm">
                     <input type="text" name="username" id="username" placeholder="Tên đăng nhập">
-                    <input type="password" name="password" id="password" placeholder="Mật khẩu">
+
+                    <!-- Ô nhập mật khẩu có icon con mắt -->
+                    <div class="password-container">
+                        <input type="password" name="password" id="password" placeholder="Mật khẩu">
+                        <span class="toggle-password"><i class="fas fa-eye"></i></span>
+                    </div>
+
                     <button type="submit">Đăng nhập</button>
                 </form>
 
@@ -36,7 +43,22 @@
         </div>
     </div>
 
-    <script src="./client/assets/js/login-validate.js"></script>
+    <script src="./views/layout/site/layout-site.js"></script>
+    <script>
+        // Toggle password visibility
+        const togglePassword = document.querySelector('.toggle-password');
+        const passwordInput = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', function () {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+
+            // Toggle icon
+            const icon = this.querySelector('i');
+            icon.classList.toggle('fa-eye');
+            icon.classList.toggle('fa-eye-slash');
+        });
+    </script>
 </body>
 
 </html>

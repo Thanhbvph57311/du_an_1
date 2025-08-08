@@ -8,8 +8,12 @@
     <title>Trang chủ - SHOES</title>
     <link rel="stylesheet" href="./assets/public/layout.css">
     <link rel="stylesheet" href="./assets/public/header.css">
-    <link rel="stylesheet" href="./assets/public/product.css">
+    <link rel="stylesheet" href="./assets/public/home.css">
     <link rel="stylesheet" href="./assets/public/footer.css">
+    <link rel="stylesheet" href="./assets/public/cart.css">
+    <link rel="stylesheet" href="./assets/public/product.css">
+    <link rel="stylesheet" href="./assets/public/product-detail.css">
+    <link rel="stylesheet" href="./asset/public/checkout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -22,7 +26,7 @@
         <div class="top-right">
             <span><i class="fas fa-phone"></i> 012345678</span>
             <span><i class="fas fa-envelope"></i> SHOESVN@gmail.com</span>
-            <a href="#"><i class="fas fa-user"></i> Account</a>
+            <a href="index.php?router=login"><i class="fas fa-user"></i> Account</a>
         </div>
     </div>
 
@@ -46,10 +50,10 @@
     <nav class="navbar">
         <ul>
             <li><a href="index.php">Trang chủ</a></li>
-            <li><a href="#">Lacoste</a></li>
-            <li><a href="#">Puma</a></li>
-            <li><a href="#">Gucci</a></li>
-            <li><a href="#">Adidas</a></li>
-            <li><a href="#">Nike</a></li>
+            <li><a href="index.php?router=product">Lacoste</a></li>
+            <li><a href="index.php?router=product">Puma</a></li>
+            <li><a href="index.php?router=product">Gucci</a></li>
+            <li><a href="index.php?router=product">Adidas</a></li>
+            <li><a href="index.php?router=product">Nike</a></li>
         </ul>
     </nav>

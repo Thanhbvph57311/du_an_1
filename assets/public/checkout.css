@@ -1,0 +1,99 @@
+/* Reset */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+/* Layout chung */
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+color: #333;
+}
+
+/* Container */
+.checkout-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 20px;
+background-color: white;
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.checkout-container h2 {
+text-align: center;
+margin-bottom: 20px;
+color: #444;
+}
+
+/* Form group */
+.checkout-form-group {
+margin-bottom: 15px;
+}
+
+.checkout-form-group label {
+display: block;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.checkout-form-group input,
+.checkout-form-group textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.checkout-form-group textarea {
+resize: vertical;
+min-height: 80px;
+}
+
+/* Submit button */
+.checkout-submit {
+width: 100%;
+padding: 12px;
+background-color: #007bff;
+color: white;
+border: none;
+font-size: 16px;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.checkout-submit:hover {
+background-color: #0056b3;
+}
+
+/* Order summary */
+.order-summary {
+margin-top: 30px;
+padding-top: 15px;
+border-top: 1px solid #ddd;
+}
+
+.order-summary h3 {
+margin-bottom: 10px;
+font-size: 18px;
+color: #222;
+}
+
+.order-summary ul {
+list-style: none;
+}
+
+.order-summary li {
+margin-bottom: 5px;
+font-size: 14px;
+}
+
+.order-summary .total {
+margin-top: 10px;
+font-weight: bold;
+font-size: 16px;
+color: #e53935;
+}

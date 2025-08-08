@@ -72,6 +72,36 @@ button:hover {
     background-color: #007bdf;
 }
 
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* chừa khoảng trống cho icon */
+    margin: 5px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background: #fafafa;
+    font-size: 14px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+    font-size: 18px;
+}
+
+.toggle-password:hover {
+    color: #000;
+}
+
+
 .divider {
     display: flex;
     align-items: center;
@@ -115,3 +145,5 @@ button:hover {
     text-decoration: none;
     font-weight: 500;
 }
+
+
